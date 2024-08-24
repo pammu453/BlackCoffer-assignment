@@ -17,7 +17,7 @@ const Dashboard = () => {
     useEffect(() => {
         const fetchDataFromApi = async () => {
             try {
-                const response = await axios.get("http://localhost:5000/api/data");
+                const response = await axios.get("https://blackcoffer-assignment-ke6v.onrender.com/api/data");
                 setData(response.data);
             } catch (error) {
                 console.error("Error fetching data:", error);
